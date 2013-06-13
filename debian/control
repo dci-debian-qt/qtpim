@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9),
                pkg-kde-tools,
                qt5-default,
                qtbase5-private-dev,
-               qtdeclarative5-private-dev,
+               qtdeclarative5-private-dev
 Standards-Version: 3.9.4
 Homepage: http://qt-project.org/
 Vcs-Bzr: lp:~kubuntu-packagers/kubuntu-packaging/qtpim-opensource-src
@@ -16,108 +16,100 @@ Package: libqt5contacts5
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt PIM module, Contacts library
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains Qt PIM module's Contacts library.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: qtdeclarative5-qtcontacts-plugin
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5contacts5,
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: libqt5contacts5, ${misc:Depends}, ${shlibs:Depends}
 Description: Qt PIM module, Contacts library QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the Qt Contacts QML plugin for Qt Declarative.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: libqt5organizer5
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt PIM module, Organizer library
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains Qt PIM module's Organizer library.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: qtdeclarative5-qtorganizer-plugin
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5organizer5,
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: libqt5organizer5, ${misc:Depends}, ${shlibs:Depends}
 Description: Qt PIM module, Organizer library QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the Qt Organizer QML plugin for Qt Declarative.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: libqt5versit5
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt PIM module, Versit library
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains Qt PIM module's Versit library.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: libqt5versitorganizer5
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt PIM module, Versit Organizer library
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains Qt PIM module's Versit Organizer library.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: qtpim5-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends},
-         libqt5contacts5 (= ${binary:Version}),
+Depends: libqt5contacts5 (= ${binary:Version}),
          libqt5organizer5 (= ${binary:Version}),
          libqt5versit5 (= ${binary:Version}),
          libqt5versitorganizer5 (= ${binary:Version}),
+         ${misc:Depends}
 Description: Qt 5 PIM development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -125,18 +117,18 @@ Description: Qt 5 PIM development files
  This package contains the header development files used for building Qt 5
  applications using Qt PIM libraries.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: qtpim5-private-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends},
-         libqt5contacts5 (= ${binary:Version}),
+Depends: libqt5contacts5 (= ${binary:Version}),
          libqt5organizer5 (= ${binary:Version}),
          libqt5versit5 (= ${binary:Version}),
          libqt5versitorganizer5 (= ${binary:Version}),
+         ${misc:Depends}
 Description: Qt 5 PIM private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -146,23 +138,22 @@ Description: Qt 5 PIM private development files
  .
  Use at your own risk.
  .
- WARNING: This module is not an official part of Qt 5, but instead a git 
- snapshot of an ongoing development. The package is very likely to 
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
 Package: qtpim5-dbg
 Priority: extra
 Section: debug
 Architecture: any
-Depends: ${misc:Depends},
-         libqt5contacts5 (= ${binary:Version}),
+Depends: libqt5contacts5 (= ${binary:Version}),
          libqt5organizer5 (= ${binary:Version}),
          libqt5versit5 (= ${binary:Version}),
          libqt5versitorganizer5 (= ${binary:Version}),
+         ${misc:Depends}
 Description: Qt PIM library debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the debugging symbols for the Qt 5 PIM
  libraries.
-
