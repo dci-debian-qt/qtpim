@@ -1,0 +1,18 @@
+qtpim-opensource-src (5.0~git20130605-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream snapshot release.
+    - Fixes QML plugins (LP: #1188180)
+  * Priority: extra for qtpim5-dbg
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Wed, 05 Jun 2013 15:45:28 +0300
+
+qtpim-opensource-src (5.0~git20130502-0ubuntu1) saucy; urgency=low
+
+  * Initial release
+  * debian/patches/revert_module_version.patch:
+    - Set upstream version number to 5.0.0 instead of 0.0.0 for now, 
+      causes a crash in supportedImplementationVersions(); (LP: #1178620)
+  * debian/patches/add_license_files.patch:
+    - Include license files not yet in upstream (submitted for inclusion)
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Fri, 10 May 2013 14:15:23 +0300
