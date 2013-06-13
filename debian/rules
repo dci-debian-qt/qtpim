@@ -7,8 +7,10 @@ export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags -
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 %:
-	dh $@ --list-missing --parallel --with pkgkde_symbolshelper --dbg-package=qtpim5-dbg
+	dh $@ --fail-missing --parallel --with pkgkde_symbolshelper --dbg-package=qtpim5-dbg
 
 override_dh_auto_clean:
 	dh_auto_clean
@@ -17,6 +19,11 @@ override_dh_auto_clean:
 
 override_dh_auto_configure:
 	qmake
+
+override_dh_auto_install:
+	dh_auto_install
+	# Remove libtool-like files
+	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
