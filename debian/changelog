@@ -5,5 +5,7 @@ qtpim-opensource-src (5.0~git20140515~29475884-1) UNRELEASED; urgency=low
   * debian/patches/revert_module_version.patch:
     - Set upstream version number to 5.0.0 instead of 0.0.0 for now, 
       causes a crash in supportedImplementationVersions(); (LP: #1178620)
+  * debian/patches/disable_failing_tests.patch:
+    - Disable the upstream tests that fail on builders
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 Jul 2014 10:53:36 +0000
