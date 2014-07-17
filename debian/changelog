@@ -1,4 +1,4 @@
-qtpim-opensource-src (5.0~git20130605-0ubuntu1) UNRELEASED; urgency=low
+qtpim-opensource-src (5.0~git20140515~29475884-1) UNRELEASED; urgency=low
 
   * Initial release (Closes: #697509) 
   * debian/patches/revert_module_version.patch:
