@@ -35,6 +35,9 @@ override_dh_auto_install:
 	# Don't install the skeleton plugin
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/organizer/libqtorganizer_skeleton.so
 
+override_dh_auto_test:
+	xvfb-run -a make check QT_PLUGIN_PATH=$(CURDIR)/plugins LD_LIBRARY_PATH=$(CURDIR)/lib
+
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
 

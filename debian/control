@@ -2,11 +2,15 @@ Source: qtpim-opensource-src
 Section: libs
 Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Build-Depends: debhelper (>= 9),
+Build-Depends: dbus,
+               debhelper (>= 9),
                pkg-kde-tools,
                qt5-default,
-               qtbase5-private-dev,
-               qtdeclarative5-private-dev,
+               qtbase5-private-dev (>= 5.3.0~),
+               qtdeclarative5-private-dev (>= 5.3.0~),
+               qtdeclarative5-qtquick2-plugin (>= 5.3.0~),
+               qtdeclarative5-test-plugin (>= 5.3.0~),
+               xvfb,
 Standards-Version: 3.9.4
 Homepage: http://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtpim.git
