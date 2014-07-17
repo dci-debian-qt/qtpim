@@ -324,4 +324,8 @@ usr/lib/*/*.prl
 usr/lib/*/*.so
 usr/lib/*/cmake/*
 usr/lib/*/pkgconfig/*
-usr/share/qt5/mkspecs/modules/*
+usr/lib/*/qt5/mkspecs/modules/*
+usr/include/*/qt5/QtVersitOrganizer/QtVersitOrganizerDepends
+usr/include/*/qt5/QtOrganizer/QtOrganizerDepends
+usr/include/*/qt5/QtVersit/QtVersitDepends
+usr/include/*/qt5/QtContacts/QtContactsDepends
