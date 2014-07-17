@@ -22,8 +22,18 @@ override_dh_auto_configure:
 
 override_dh_auto_install:
 	dh_auto_install
+	
+	# Remove private stuff
+	rm -rfv debian/tmp/usr/include/*/qt5/QtContacts/*/QtContacts/private/
+	rm -rfv debian/tmp/usr/include/*/qt5/QtOrganizer/*/QtOrganizer/private/
+	rm -rfv debian/tmp/usr/include/*/qt5/QtVersit/*/QtVersit/private/
+	rm -rfv debian/tmp/usr/include/*/qt5/QtVersitOrganizer/*/QtVersitOrganizer/private/
+	rm -fv $(CURDIR)/debian/tmp/usr/lib/*/qt5/mkspecs/modules/qt_lib_*_private.pri
+	
 	# Remove libtool-like files
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
+	# Don't install the skeleton plugin
+	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/organizer/libqtorganizer_skeleton.so
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
