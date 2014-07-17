@@ -64,6 +64,7 @@ usr/include/*/qt5/QtContacts/QContactUnionFilter
 usr/include/*/qt5/QtContacts/QContactUrl
 usr/include/*/qt5/QtContacts/QContactVersion
 usr/include/*/qt5/QtContacts/QtContacts
+usr/include/*/qt5/QtContacts/QtContactsDepends
 usr/include/*/qt5/QtContacts/QtContactsVersion
 usr/include/*/qt5/QtContacts/qcontact.h
 usr/include/*/qt5/QtContacts/qcontactabstractrequest.h
@@ -203,6 +204,7 @@ usr/include/*/qt5/QtOrganizer/QOrganizerTodoOccurrence
 usr/include/*/qt5/QtOrganizer/QOrganizerTodoProgress
 usr/include/*/qt5/QtOrganizer/QOrganizerTodoTime
 usr/include/*/qt5/QtOrganizer/QtOrganizer
+usr/include/*/qt5/QtOrganizer/QtOrganizerDepends
 usr/include/*/qt5/QtOrganizer/QtOrganizerVersion
 usr/include/*/qt5/QtOrganizer/qorganizer.h
 usr/include/*/qt5/QtOrganizer/qorganizerabstractrequest.h
@@ -294,6 +296,7 @@ usr/include/*/qt5/QtVersit/QVersitReader
 usr/include/*/qt5/QtVersit/QVersitResourceHandler
 usr/include/*/qt5/QtVersit/QVersitWriter
 usr/include/*/qt5/QtVersit/QtVersit
+usr/include/*/qt5/QtVersit/QtVersitDepends
 usr/include/*/qt5/QtVersit/QtVersitVersion
 usr/include/*/qt5/QtVersit/qtversitversion.h
 usr/include/*/qt5/QtVersit/qversitcontactexporter.h
@@ -313,6 +316,7 @@ usr/include/*/qt5/QtVersitOrganizer/QVersitOrganizerImporter
 usr/include/*/qt5/QtVersitOrganizer/QVersitOrganizerImporterPropertyHandler
 usr/include/*/qt5/QtVersitOrganizer/QVersitTimeZoneHandler
 usr/include/*/qt5/QtVersitOrganizer/QtVersitOrganizer
+usr/include/*/qt5/QtVersitOrganizer/QtVersitOrganizerDepends
 usr/include/*/qt5/QtVersitOrganizer/QtVersitOrganizerVersion
 usr/include/*/qt5/QtVersitOrganizer/qtversitorganizerversion.h
 usr/include/*/qt5/QtVersitOrganizer/qversitorganizerexporter.h
@@ -325,7 +329,3 @@ usr/lib/*/*.so
 usr/lib/*/cmake/*
 usr/lib/*/pkgconfig/*
 usr/lib/*/qt5/mkspecs/modules/*
-usr/include/*/qt5/QtVersitOrganizer/QtVersitOrganizerDepends
-usr/include/*/qt5/QtOrganizer/QtOrganizerDepends
-usr/include/*/qt5/QtVersit/QtVersitDepends
-usr/include/*/qt5/QtContacts/QtContactsDepends
