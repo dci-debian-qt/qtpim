@@ -7,5 +7,24 @@ qtpim-opensource-src (5.0~git20140515~29475884-1) UNRELEASED; urgency=low
       causes a crash in supportedImplementationVersions(); (LP: #1178620)
   * debian/patches/disable_failing_tests.patch:
     - Disable the upstream tests that fail on builders
+  * debian/patches/QtVersit-Fix-crash-on-access-to-static-variable-in-m.patch:
+    - Fix a crash in versit (LP: #1521331)
+  * Backport patches to make qtpim build with Qt 5.5:
+    - debian/patches/fixqt55_1.patch
+    - debian/patches/fixqt55_2.patch
+  * debian/patches/QtOrganizer-fix-date-only-value-handling-to-avoid-UT.patch:
+    - A patch for all day event returning wrong value (LP: #1462989)
+  * debian/patches/Added-list-of-imported-ids-as-argument-for-importIte.patch:
+    - Improve vcard importing (LP: #1517880)
+  * debian/patches/Avoid-crash-while-parsing-vcards-from-different-threads.patch
+    - Avoid crash while parsin vcards from different threads. (LP: #1514350)
+  * debian/patches/Fixed-contact-import-into-QDeclarativeContactModel.patch
+    - Fix avatars for contacts not imported properly (LP: #1510254)
+  * debian/patches/clean_update_after_engine_reset.patch
+    - Fix 10 sec UI freeze when resetting contact engine (LP: #1497381)
+  * debian/patches/Fixed-DisplayName-conversion-to-vcard.patch
+    - Fix DisplayName conversion to vcard. (LP: #1494322)
+  * debian/patches/Added-detailTypesHint-property-to-QDeclarativeOrgani.patch
+    - Make it possible to filter field while querying (LP: #1437300)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 Jul 2014 10:53:36 +0000
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Wed, 23 Dec 2015 13:15:04 +0000
