@@ -6,6 +6,7 @@
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export QT_SELECT := qt5
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
@@ -21,8 +22,12 @@ override_dh_auto_configure:
 	mkdir .git
 	qmake QT_BUILD_PARTS+=tests
 
+override_dh_auto_build-indep:
+	dh_auto_build -Smakefile -- docs
+
 override_dh_auto_install:
 	dh_auto_install
+	$(MAKE) INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 	
 	# Remove private stuff
 	rm -rfv debian/tmp/usr/include/*/qt5/QtContacts/*/QtContacts/private/
@@ -37,8 +42,4 @@ override_dh_auto_install:
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/organizer/libqtorganizer_skeleton.so
 
 override_dh_auto_test:
-	xvfb-run -a make check QT_PLUGIN_PATH=$(CURDIR)/plugins LD_LIBRARY_PATH=$(CURDIR)/lib
-
-override_dh_builddeb:
-	dh_builddeb -- -Zxz
-
+	xvfb-run -a dh_auto_test -- QT_PLUGIN_PATH=$(CURDIR)/plugins LD_LIBRARY_PATH=$(CURDIR)/lib

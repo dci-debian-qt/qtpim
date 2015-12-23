@@ -5,13 +5,16 @@ Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: dbus,
                debhelper (>= 9),
                pkg-kde-tools,
-               qt5-default,
-               qtbase5-private-dev (>= 5.3.0~),
-               qtdeclarative5-private-dev (>= 5.3.0~),
-               qtdeclarative5-qtquick2-plugin (>= 5.3.0~),
-               qtdeclarative5-test-plugin (>= 5.3.0~),
+               qml-module-qtquick2 (>= 5.5.0~),
+               qml-module-qttest (>= 5.5.0~),
+               qtbase5-private-dev (>= 5.5.0~),
+               qtdeclarative5-private-dev (>= 5.5.0~),
                xvfb,
-Standards-Version: 3.9.4
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.5.0~),
+                     qtbase5-doc-html (>= 5.5.0~),
+                     qtdeclarative5-doc-html (>= 5.5.0~),
+                     qttools5-dev-tools (>= 5.5.0~)
+Standards-Version: 3.9.6
 Homepage: http://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtpim.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtpim.git;a=summary
@@ -158,6 +161,38 @@ Description: Qt 5 PIM development files
  .
  This package contains the header development files used for building Qt 5
  applications using Qt PIM libraries.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
+ change in a binary incompatible way, and no guarantees are given.
+
+Package: qtpim5-doc
+Priority: extra
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt 5 PIM documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the documentation for the Qt 5 PIM
+ module, including Contacts, Organizer and Versit.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
+ change in a binary incompatible way, and no guarantees are given.
+
+Package: qtpim5-doc-html
+Priority: extra
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt 5 PIM HTML documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the HTML documentation for the Qt 5 PIM
+ module, including Contacts, Organizer and Versit.
  .
  WARNING: This module is not an official part of Qt 5, but instead a git
  snapshot of an ongoing development. The package is very likely to
