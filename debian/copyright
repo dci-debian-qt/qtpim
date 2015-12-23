@@ -3,7 +3,7 @@ Source: http://qt.gitorious.org/qt/qtpim
 
 Files: *
 Copyright: 2012 Digia Plc and/or its subsidiary(-ies)
-License: LGPL-2.1 with Digia Qt LGPL Exception 1.1 or GPL-3
+License: LGPL-2.1 with Digia-1.1 exception or GPL-3
 
 Files: debian/*
 Copyright: 2007-2012 Fathi Boudra <fabo@debian.org>
@@ -14,7 +14,7 @@ Copyright: 2007-2012 Fathi Boudra <fabo@debian.org>
            2012-2013 Timo Jyrinki <timo.jyrinki@canonical.com>
 License: LGPL-2.1
 
-License: LGPL-2.1 with Digia Qt LGPL Exception 1.1
+License: LGPL-2.1 with Digia-1.1 exception
  GNU Lesser General Public License version 2.1:
  This file may be used under the terms of the GNU Lesser General Public
  License version 2.1 as published by the Free Software Foundation and
@@ -78,7 +78,7 @@ License: LGPL-2.1
 
 Files: tests/auto/cmake/test_modules/main.cpp
 Copyright: 2012 Klarälvdalens Datakonsult AB, a KDAB Group company
-License: LGPL-2.1 with Digia Qt LGPL Exception 1.1 or GPL-3
+License: LGPL-2.1 with Digia-1.1 exception or GPL-3
 
 Files: examples/*
        src/contacts/doc/snippets/*
@@ -163,4 +163,4 @@ License: GFDL-1.3
 Files: doc/src/snippets/code/doc_src_lgpl.qdoc
        src/versit/doc/snippets/qtversitdocsample/qtversitdocsample.cpp
 Copyright: 2012 Digia Plc and/or its subsidiary(-ies).
-License: LGPL-2.1 with Digia Qt LGPL Exception 1.1 or GPL-3
+License: LGPL-2.1 with Digia-1.1 exception or GPL-3
