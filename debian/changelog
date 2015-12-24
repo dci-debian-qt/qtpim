@@ -1,3 +1,9 @@
+qtpim-opensource-src (5.0~git20140515~29475884-1+mci1) UNRELEASED; urgency=low
+
+  * MCI rebuild
+
+ -- Bhushan Shah <bshah@kde.org>  Thu, 24 Dec 2015 18:49:37 +0530
+
 qtpim-opensource-src (5.0~git20140515~29475884-1) UNRELEASED; urgency=low
 
   [ Timo Jyrinki ]
