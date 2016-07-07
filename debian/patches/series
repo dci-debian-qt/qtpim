@@ -12,3 +12,4 @@ Avoid-crash-while-parsing-vcards-from-different-threads.patch
 Added-list-of-imported-ids-as-argument-for-importIte.patch
 QtOrganizer-fix-date-only-value-handling-to-avoid-UT.patch
 QtVersit-Fix-crash-on-access-to-static-variable-in-m.patch
+disable_examples.patch
