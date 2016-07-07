@@ -1,9 +1,11 @@
---- examples/examples.pro.orig	2016-07-07 09:39:19.278351545 +0530
-+++ examples/examples.pro	2016-07-07 09:39:37.515018534 +0530
+diff --git a/examples/examples.pro b/examples/examples.pro
+index 8a6fa75..02a4586 100644
+--- a/examples/examples.pro
++++ b/examples/examples.pro
 @@ -1,4 +1,4 @@
  TEMPLATE = subdirs
 -SUBDIRS =   organizer \
 -            contacts
-+# SUBDIRS =   organizer \
-+#             contacts
++#SUBDIRS =   organizer \
++#            contacts
  
